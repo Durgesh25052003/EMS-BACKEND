@@ -1,0 +1,5 @@
+node_modules/
+.env
+.DS_Store
+public/img/users/*
+!public/img/users/.gitkeep
