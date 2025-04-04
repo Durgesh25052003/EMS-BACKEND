@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon server.js",
     "start": "node index.js",
-    "install":"npm run build"
+    "build": "echo 'No build step required'"
   },
   "author": "",
   "license": "ISC",
