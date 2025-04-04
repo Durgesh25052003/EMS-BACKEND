@@ -40,7 +40,8 @@ app.use(cors({
   allowedHeaders: ['Content-Type', 'Authorization', 'Cookie'],
   exposedHeaders: ['Set-Cookie', 'Authorization', 'Access-Control-Allow-Origin'],
 }));
-app.options('*', cors());
+// app.options('*', cors());
+app.use(cors({ origin: "https://your-frontend.vercel.app" }));
 // Add this after cors middleware  // Enable pre-flight for all routes
 
 app.use(express.static('public'));
